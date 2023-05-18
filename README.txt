@@ -6,6 +6,7 @@ Python 3.7 or higher installed (Download from the official website: https://www.
 Selenium library installed (Run the command pip install selenium in the command prompt or terminal)
 PyQt5 library installed (Run the command pip install pyqt5 in the command prompt or terminal)
 Chrome web browser installed
+
 Step 1: Prepare the Environment:
 
 Install Python: Download and install the Python programming language from the official website (https://www.python.org/downloads). Follow the installation instructions for your operating system.
@@ -36,7 +37,15 @@ Update the Configuration Variables: Locate the following variables in the code:
 
 CHROME_DRIVER_PATH: Set this variable to the file path of the downloaded ChromeDriver executable.
 CHROME_USER_DATA_DIR: Set this variable to the path of the Chrome user data directory (C:\Users\<your_username>\AppData\Local\Google\Chrome\User Data for Windows).
-CHROME_PROFILE_DIRECTORY: Set this variable to the name of the newly created profile directory (e.g., "Profile 1").
+CHROME_PROFILE_DIRECTORY: Set this variable to the name of the profile directory you are using in Chrome.
+Note: To find the profile directory you are using in Chrome, follow these steps:
+
+Open Google Chrome.
+In the address bar, type chrome://version and press Enter.
+Look for the "Profile Path" field. The path mentioned there indicates the user profile you are currently using.
+Set the CHROME_PROFILE_DIRECTORY variable in the code to match the profile directory name mentioned in the "Profile Path" field.
+Please ensure that you have the correct profile directory name and update the CHROME_PROFILE_DIRECTORY variable accordingly.
+
 Step 5: Launch and Use the Twitch Streamer App:
 
 Run the Twitch Streamer App: Open a command prompt or terminal, navigate to the directory containing the Twitch Streamer app file, and execute the Python script by running the command python twitch_streamer.py.
