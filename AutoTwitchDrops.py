@@ -5,8 +5,8 @@ import sys
 from selenium import webdriver
 from time import sleep
 
-CHROME_DRIVER_PATH = "D:\\chromedriver_win32\\chromedriver.exe"
-CHROME_USER_DATA_DIR = "C:\\Users\\K876\\AppData\\Local\\Google\\Chrome\\User Data"
+CHROME_DRIVER_PATH = "Put driver exe path here"
+CHROME_USER_DATA_DIR = "C:\Users\<your_username>\AppData\Local\Google\Chrome\User Data"
 CHROME_PROFILE_DIRECTORY = "Profile 1"
 
 class TwitchStreamerThread(QThread):
